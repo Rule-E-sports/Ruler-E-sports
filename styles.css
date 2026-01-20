@@ -505,6 +505,8 @@ section h2::after {
     font-weight: bold;
     letter-spacing: 1px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .contact-email:hover {
@@ -606,6 +608,12 @@ section h2::after {
     .nav-links {
         gap: 1rem;
         font-size: 0.9rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav-container {
+        flex-direction: row;
     }
 
     .hero h2 {
@@ -641,21 +649,34 @@ section h2::after {
     section {
         padding: 60px 0;
     }
+
+    .contact-email {
+        font-size: 1rem;
+        padding: 12px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .email-icon {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
     .nav-links {
-        flex-direction: column;
         gap: 0.5rem;
+        font-size: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .nav-container {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        gap: 0.5rem;
     }
 
     .logo h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .hero {
@@ -673,4 +694,109 @@ section h2::after {
     section {
         padding: 40px 0;
     }
+
+    .contact-email {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        max-width: 300px;
+        margin: 1rem auto;
+    }
+
+    .email-icon {
+        font-size: 1rem;
+    }
+}
+
+/* ホーム用スポンサー横スクロール */
+.sponsors-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #070710 0%, #120022 100%);
+    border-top: 2px solid rgba(0,255,255,0.06);
+}
+
+.home-sponsors h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.sponsor-sub {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.sponsors-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.sponsors-track {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    /* 横スクロールアニメーション */
+    animation: sponsors-scroll 25s linear infinite;
+}
+
+.sponsors-carousel:hover .sponsors-track {
+    animation-play-state: paused;
+}
+
+.sponsor-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 300px;
+    max-width: 420px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.03);
+    box-shadow: 0 0 18px rgba(0,0,0,0.4);
+}
+
+.sponsor-logo {
+    width: 86px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.02);
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.sponsor-name {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+@keyframes sponsors-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .sponsor-card { min-width: 260px; }
+    .sponsors-track { gap: 1rem; }
+}
+
+@media (max-width: 480px) {
+    .sponsor-card { min-width: 220px; }
+    .sponsor-logo { width: 64px; height: 48px; }
+    .sponsors-section { padding: 40px 0; }
 }
