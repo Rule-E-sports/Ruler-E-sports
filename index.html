@@ -1,139 +1,146 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>公式サイト | Fortnite eSports Team</title>
-  <meta name="description" content="スポンサー向け公式サイト。チームの実績・メンバー・スポンサー募集情報を掲載。" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-　<link rel="icon" href="favicon.ico" />
-　<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruler e-sports | Fortnite 公式esportsチーム</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- アクセシビリティ用スキップリンク -->
-  <a class="skip-link" href="#main">メインへスキップ</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-<a class="brand" href="#top" aria-label="ホームへ">
-  <img src="アイコン.png" alt="" class="logo-img">
-  <span class="brand-text">Ruler E-sports</span>
-</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="メニューを開閉">☰</button>
-      <nav id="nav" class="nav" aria-label="メイン">
-        <ul>
-          <li><a href="#about">チーム</a></li>
-          <li><a href="#achievements">実績</a></li>
-          <li><a href="#sponsors">スポンサー</a></li>
-          <li><a href="https://forms.gle/Sz4FJMjw1ebDRnmR7" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></li>
-          <li><a href="https://x.com/ruler_com" target="_blank" rel="noopener noreferrer">公式Twitter</a></li>
-          <li><a href="https://lite.tiktok.com/t/ZSHGqH3bqJCo4-4VCbe/" target="_blank" rel="noopener noreferrer">公式TikTok</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- ヒーロー -->
-    <section id="top" class="hero" aria-label="トップ">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="label">FORTNITE / PRO ESPORTS</p>
-          <h1>俺らにしかないことを見つけ、<br class="sp-br">夢を掴む。</h1>
-          <p class="sub">プロ志向・Fortnite特化。コミュニケーションと思考力で勝ち切るチーム。</p>
-          <div class="cta-row">
-            <a class="btn primary" href="#sponsors">スポンサーの皆さまへ</a>
-            <a class="btn" href="#achievements">実績を見る</a>
-            <a class="btn" href="https://x.com/ruler_com" target="_blank" rel="noopener noreferrer">公式Twitter</a>
-            <a class="btn" href="https://lite.tiktok.com/t/ZSHGqH3bqJCo4-4VCbe/" target="_blank" rel="noopener noreferrer">公式TikTok</a>
-          </div>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Ruler e-sports</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">について</a></li>
+                <li><a href="#divisions">部門</a></li>
+                <li><a href="members.html">メンバー</a></li>
+                <li><a href="#recruit">募集</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
         </div>
-        <div class="hero-media" aria-hidden="true">
-          <div class="glow"></div>
-          <div class="card stat">
-            <div class="stat-num" id="kpi-final">1回</div>
-            <div class="stat-label">グランドファイナル出場</div>
-          </div>
-          <div class="card stat">
-            <div class="stat-num" id="kpi-top">TOP</div>
-            <div class="stat-label">FNCS / ランクカップ</div>
-          </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Ruler e-sports</h2>
+            <p>Fortniteで競う、育成する、配信する</p>
+            <div class="hero-buttons">
+                <a href="#recruit" class="btn btn-primary">メンバー募集中</a>
+                <a href="#divisions" class="btn btn-secondary">部門を見る</a>
+            </div>
         </div>
-      </div>
+        <div class="hero-background"></div>
     </section>
 
-　　<section id="news" class="section">
-  　　<div class="container">
-    　　<h2>お知らせ</h2>
-    　　　<ul>
-      　　　<li><h2>2025/08/01 第二回メンバー募集開始</h2></li>
-     　　 　<li><h2>2025/07/20 公式ウェブサイト公開</h2></li>
-    　　　</ul>
-  　　　　</div>
-　　　</section>
+    <section id="about" class="about">
 
-    <!-- チーム紹介 -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>チーム紹介</h2>
-        <p class="lead">代表 <strong id="leader-name">shxrk</strong>。8名体制（選手・マネージャー・ストリーマー・育成・オーナー・副オーナー・運営）。<br>
-        募集方針：<span class="badge">選手＝実績必須</span>／<span class="badge">育成＝制限少</span>／<span class="badge">運営＝経験歓迎</span><br>
-        チームルール：悪口・喧嘩禁止（違反は注意または除隊）。</p>
-
-        <div id="member-grid" class="grid"></div>
-      </div>
-    </section>
-
-    <!-- 実績 -->
-    <section id="achievements" class="section alt">
-      <div class="container">
-        <h2>実績・戦績</h2>
-        <ul id="achievements-list" class="timeline"></ul>
-      </div>
-    </section>
-
-    <!-- スポンサー向け -->
-    <section id="sponsors" class="section">
-      <div class="container">
-        <h2>スポンサー募集</h2>
-        <p class="lead">この度Ruler E-sportsはスポンサー募集を行うことに致しました。チームの拡大したいと言う思いもあり、チームを有名にしたいなど様々な理由があります。
-          なのでスポンサー募集を行いたいと思っております。
-        </p>
-
-        <div class="grid logos" aria-label="スポンサー掲載例">
-          <div class="logo-card">なし</div>
-          <div class="logo-card">なし</div>
-          <div class="logo-card">なし</div>
-          <div class="logo-card">なし</div>
+        <div class="container">
+            <h2>Ruler e-sportsについて</h2>
+            <div class="about-content">
+                <div class="about-item">
+                    <h3>🎮 メインゲーム</h3>
+                    <p>Fortniteの最高峰を目指す。競技から配信まで、多様なプレイスタイルに対応しています。</p>
+                </div>
+                <div class="about-item">
+                    <h3>🚀 成長への道</h3>
+                    <p>初心者からプロまで、全てのプレイヤーが成長できる環境を提供します。</p>
+                </div>
+                <div class="about-item">
+                    <h3>👥 コミュニティ</h3>
+                    <p>Ruler e-sportsは単なるチームではなく、情熱を共有するコミュニティです。</p>
+                </div>
+            </div>
         </div>
-
-        <div class="card pitch">
-          <h3>提供できる価値</h3>
-          <ul class="check">
-            <li>FNCS含む競技シーンでの露出</li>
-            <li>実績ハイライトを用いたブランディング</li>
-            <li>コミュニケーション力に基づくメディア対応</li>
-          </ul>
-          <p class="note">※現在スポンサー募集中（1件審査中）。</p>
-        </div>
-      </div>
     </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Team White — Fortnite Pro Team</small>
-      <nav class="footer-nav" aria-label="フッターナビ">
-        <a href="#about">チーム</a>
-        <a href="#achievements">実績</a>
-        <a href="#sponsors">スポンサー</a>
-        <a class="btn" href="https://x.com/ruler_com" target="_blank" rel="noopener noreferrer">公式Twitter</a>
-        <a class="btn" href="https://lite.tiktok.com/t/ZSHGqH3bqJCo4-4VCbe/" target="_blank" rel="noopener noreferrer">公式TikTok</a>
-      </nav>
-    </div>
-  </footer>
+    <!-- 部門セクション -->
+    <section id="divisions" class="divisions">
+        <div class="container">
+            <h2>部門紹介</h2>
+            <div class="division-grid">
+                <div class="division-card">
+                    <div class="division-icon">📹</div>
+                    <h3>ストリーマー部門</h3>
+                    <p>Fortniteのプレイを配信し、エンターテイメントとしてのesportsを追求する部門です。視聴者とのコミュニケーションを大切にします。</p>
+                </div>
+                <div class="division-card">
+                    <div class="division-icon">🌱</div>
+                    <h3>育成部門</h3>
+                    <p>初心者・中級者向けの育成プログラム。オーナーが認めたプレイヤーが基礎から応用まで指導し、競技へのステップアップをサポートします。</p>
+                </div>
+                <div class="division-card">
+                    <div class="division-icon">🏆</div>
+                    <h3>競技部門</h3>
+                    <p>Fortniteの競技シーンで活躍するプロフェッショナルメンバー。大会への出場と優勝を目指しています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 募集セクション -->
+    <section id="recruit" class="recruit">
+        <div class="container">
+            <h2>メンバー募集中</h2>
+            <p class="recruit-intro">Ruler e-sportsでは、全ての部門でメンバーを募集しています。</p>
+            <div class="recruit-content">
+                <div class="recruit-item">
+                    <h4>🎯 募集対象</h4>
+                    <ul>
+                        <li>Fortniteに熱意を持つ全てのプレイヤー</li>
+                        <li>初心者から経験者まで</li>
+                        <li>配信に興味がある方</li>
+                        <li>競技で活躍したい方</li>
+                        <li>ディスコードを使用できる方</li>
+                        <li>12~30以下の方(13歳以下保護者の同意必須)</li>
+                        <li>FortniteIDの最初にrulerを付けれる方</li>
+                    </ul>
+                </div>
+                <div class="recruit-item">
+                    <h4>✨ 私たちが支援するもの</h4>
+                    <ul>
+                        <li>月に一度のメンバー同士の戦い練習</li>
+                        <li>SNS拡散</li>
+                        <li>配信マネージャー</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="recruit-cta">興味がある方は、下のお問い合わせから詳細をお知らせください！</p>
+        </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <div class="contact-content">
+                <p>ご質問や入団希望など、お気軽にお問い合わせください。</p>
+                <a href="mailto:rulerhukuo.na@gmail.com" class="contact-email">
+                    <span class="email-icon">✉️</span>
+                    rulerhukuo.na@gmail.com
+                </a>
+                <p class="contact-note">通常、24時間以内にご返信させていただきます。</p>
+                <nav class="contact-note">メール内容に以下を含めて送信してください</nav>
+                <nav class="contact-note">お名前・希望部門・年齢・ディスコードID・FortniteID・入団理由の内容  (ストリーマ部門の場合 SNSのユーザー名(@)・登録者数・平均再生数)</nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ruler e-sports. All rights reserved.</p>
+            <p>メインゲーム: Fortnite</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
   <!-- Firebase連携用スクリプト -->
   <script type="module" src="./script.js"></script>
